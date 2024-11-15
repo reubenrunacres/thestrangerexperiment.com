@@ -3,24 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Your Name - Personal Website</title>
     <style>
+        /* Modern, clean styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            color: #333;
         }
-        .container {
+        nav {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        section {
+            padding: 40px 20px;
             max-width: 800px;
             margin: 0 auto;
+        }
+        #home {
+            text-align: center;
+            padding: 60px 20px;
+            background: #F5F5F5;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            color: #2C3E50;
+        }
+        .project {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        /* Add responsiveness */
+        @media (max-width: 600px) {
+            nav {
+                text-align: center;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Website</h1>
-        <p>This is my first GitHub Pages website!</p>
-    </div>
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <!-- Home Section -->
+    <section id="home">
+        <img src="your-photo.jpg" alt="Your Name" class="profile-img">
+        <h1>Your Name</h1>
+        <p>Your Title or Tagline</p>
+    </section>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Write a brief introduction about yourself here. Include your background, interests, and what you're passionate about.</p>
+        <h3>Skills</h3>
+        <ul>
+            <li>Skill 1</li>
+            <li>Skill 2</li>
+            <li>Skill 3</li>
+        </ul>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of your first project. What did you do? What technologies did you use?</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of your second project. What were the challenges and outcomes?</p>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at: your.email@example.com</p>
+        <p>Connect with me:</p>
+        <ul>
+            <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
+            <li><a href="https://github.com/yourusername">GitHub</a></li>
+            <!-- Add more social links as needed -->
+        </ul>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
